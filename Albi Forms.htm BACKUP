@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="ui-mobile"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><!-- base href="http://files1.albihomes.com/forms/" -->
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+  <title>Albi Forms</title>
+  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+  <meta name="author" content="Steve Stefanovich">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="Albi%20Forms_files/jquery.css">
+  <!-- Include the jQuery library -->
+  <script src="Albi%20Forms_files/jquery-1.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="Albi%20Forms_files/jquery.js"></script>
+  <style>
+  
+	
+/* Adjust the width of the left reveal menu. */
+#demo-page #left-panel.ui-panel {
+    width: 15em;
+}
+#demo-page #left-panel.ui-panel-closed {
+    width: 0;
+}
+#demo-page .ui-panel-page-content-position-left,
+.ui-panel-dismiss-open.ui-panel-dismiss-position-left {
+    left: 15em;
+    right: -15em;
+}
+#demo-page .ui-panel-animate.ui-panel-page-content-position-left.ui-panel-page-content-display-reveal {
+    left: 0;
+    right: 0;
+    -webkit-transform: translate3d(15em,0,0);
+    -moz-transform: translate3d(15em,0,0);
+    transform: translate3d(15em,0,0);
+}
+
+
+/* Listview with collapsible list items. */
+.ui-listview > li .ui-collapsible-heading {
+  margin: 0;
+}
+.ui-collapsible.ui-li-static {
+  padding: 0;
+  border: none !important;
+}
+.ui-collapsible + .ui-collapsible > .ui-collapsible-heading > .ui-btn {
+  border-top: none !important;
+ 
+}
+/* Nested list button colors */
+.ui-listview .ui-listview .ui-btn {
+    background: #fff;
+}
+.ui-listview .ui-listview .ui-btn:hover {
+    background: #f5f5f5;
+}
+.ui-listview .ui-listview .ui-btn:active {
+    background: #f1f1f1;
+}
+/* Reveal panel shadow on top of the listview menu (only to be used if you don't use fixed toolbars) */
+#demo-page .ui-panel-display-reveal {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+#demo-page .ui-panel-page-content-position-left {
+    -webkit-box-shadow: -5px 0px 5px rgba(0,0,0,.15);
+    -moz-box-shadow: -5px 0px 5px rgba(0,0,0,.15);
+    box-shadow: -5px 0px 5px rgba(0,0,0,.15);
+}
+/* Setting a custom background image. */
+#demo-page.ui-page-theme-a,
+#demo-page .ui-panel-wrapper {
+    background-color: #fff;
+    background-image: url(../_assets/img/bg-pattern.png);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+}
+/* Styling of the page contents */
+.article p {
+    margin: 0 0 1em;
+    line-height: 1.5;
+}
+.article p img {
+    max-width: 100%;
+}
+.article p:first-child {
+    text-align: center;
+}
+.article small {
+    display: block;
+    font-size: 75%;
+    color: #c0c0c0;
+}
+.article p:last-child {
+    text-align: right;
+}
+.article a.ui-btn {
+    margin-right: 2em;
+}
+@media all and (min-width:769px) {
+    .article {
+        max-width: 994px;
+        margin: 0 auto;
+        padding-top: 4em;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 2em;
+        -moz-column-gap: 2em;
+        column-gap: 2em;
+    }
+    /* Fix for issue with buttons and form elements
+    if CSS columns are used on a page with a panel. */
+    .article a.ui-btn {
+        -webkit-transform: translate3d(0,0,0);
+    }
+	h2.Comic {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	}
+}
+	/* unvisited link */
+a:link {
+color : red;
+}/* visited link */
+a:visited {
+color : red;
+}/* mouse over link */
+a:hover {
+color : green;
+}/* selected link */
+a:active {
+color : #0000FF;
+}
+
+		/* Fixes Header truncated in popup */
+		.ui-header .ui-title {
+			margin-right: 10%;
+			margin-left: 10%;
+		}
+
+</style>
+  
+</head>
+<body class="ui-mobile-viewport ui-overlay-a">
+
+
+
+
+<div data-role="page" id="pageone" data-url="pageone" tabindex="0" class="ui-page ui-page-theme-a ui-page-footer-fixed ui-page-active" style="padding-bottom: 35px; min-height: 974px;">
+ 
+ <div data-role="panel" id="myPanel" data-theme="b" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-panel-closed ui-body-b ui-panel-animate"> 
+    <div class="ui-panel-inner"><h2 class="Comic">Select a Form</h2><br><div data-role="ui-panel-inner">
+	<ul data-role="listview" class="ui-listview">
+	<li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-first-child">Field</li>
+	<hr>
+	<div data-role="collapsible" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content ui-collapsible-collapsed"><h1 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a href="#" class="ui-collapsible-heading-toggle ui-btn ui-icon-plus ui-btn-icon-left ui-btn-inherit">Safety<span class="ui-collapsible-heading-status"> click to expand contents</span></a></h1><div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+      
+	<li data-role="collapsible" data-inset="true" data-iconpos="right" data-theme="b" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content ui-collapsible-collapsed"><h2 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a href="#" class="ui-collapsible-heading-toggle ui-btn ui-icon-plus ui-btn-icon-right ui-btn-b">Inspection Forms<span class="ui-collapsible-heading-status"> click to expand contents</span></a></h2><div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+    
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+	<li data-icon="false" class="ui-first-child"><a href="http://form.jotform.ca/form/50643995635264" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Hazard Assessment</a></li>
+	<li data-icon="false"><a href="http://form.jotform.ca/form/50696781541261" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Formal Supervisor</a></li>
+	<li data-icon="false"><a href="http://form.jotform.ca/form/50706582731253" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Informal Manager</a></li>
+	<li data-icon="false"><a href="http://form.jotform.ca/form/50713438752254" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Customer Care</a></li>
+	<li data-icon="false"><a href="http://form.jotform.ca/form/50706508992260" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">De-Ice Hazard</a></li>
+	<li data-icon="false"><a href="http://form.jotformpro.com/form/51116694246961" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Corrective Action</a></li>
+	<li data-icon="false" class="ui-last-child"><a href="http://form.jotformpro.com/form/51338395105959" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Infraction Notice</a></li>
+	</ul>
+	</div></li>
+	
+  <li data-role="collapsible" data-inset="true" data-iconpos="right" data-theme="b" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content ui-collapsible-collapsed"><h2 style="margin: 0;" class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a href="#" class="ui-collapsible-heading-toggle ui-btn ui-icon-plus ui-btn-icon-right ui-btn-b">Vehicle Inspect<span class="ui-collapsible-heading-status"> click to expand contents</span></a></h2><div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+    
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+
+	<li data-icon="false" class="ui-first-child ui-last-child"><a href="http://form.jotform.ca/form/50697426069263" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Vehicle Inspection</a></li>
+
+	</ul>
+	</div></li>
+  <li data-role="collapsible" data-inset="true" data-iconpos="right" data-theme="b" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content ui-collapsible-collapsed"><h2 style="margin: 0;" class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a href="#" class="ui-collapsible-heading-toggle ui-btn ui-icon-plus ui-btn-icon-right ui-btn-b">Meeting Forms<span class="ui-collapsible-heading-status"> click to expand contents</span></a></h2><div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+    
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+
+	<li data-icon="false" class="ui-first-child"><a href="http://form.jotform.ca/form/50706606628255" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Albi Staff Tool Box</a></li>
+	<li data-icon="false"><a href="http://form.jotformpro.com/form/51756089686977" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Trade Tool Box</a></li>
+	<li data-icon="false"><a href="http://form.jotform.ca/form/50816732798265" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Framer Tool Box</a></li>
+	<li data-icon="false"><a href="http://form.jotform.ca/form/50836811864259" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Roofer Tool Box</a></li>
+	<li data-icon="false" class="ui-last-child"><a href="http://form.jotform.ca/form/50837231750250" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Envelope tool box</a></li>
+	</ul>
+	</div></li>
+ 
+  <li data-role="collapsible" data-inset="true" data-iconpos="right" data-theme="b" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content ui-collapsible-collapsed"><h2 style="margin: 0;" class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a href="#" class="ui-collapsible-heading-toggle ui-btn ui-icon-plus ui-btn-icon-right ui-btn-b">Mishap Forms<span class="ui-collapsible-heading-status"> click to expand contents</span></a></h2><div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+    
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+
+	
+	<li data-icon="false" class="ui-first-child"><a href="http://form.jotform.ca/form/50717519219256" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Near Miss Report</a></li>
+	<li data-icon="false"><a href="http://form.jotform.ca/form/50716928919266" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Accident Incident</a></li>
+	<li data-icon="false" class="ui-last-child"><a href="http://form.jotform.ca/form/50775930254256" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Vehicle Accident</a></li>
+	</ul>
+	</div></li>	
+	</div></div> <!-- data-role="collapsible"  Safety -->
+	
+	<div data-role="collapsible" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content ui-collapsible-collapsed"><h1 class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a href="#" class="ui-collapsible-heading-toggle ui-btn ui-icon-plus ui-btn-icon-left ui-btn-inherit">Operations<span class="ui-collapsible-heading-status"> click to expand contents</span></a></h1><div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+      
+	    <li data-role="collapsible" data-inset="true" data-iconpos="right" data-theme="b" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content ui-collapsible-collapsed"><h2 style="margin: 0;" class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a href="#" class="ui-collapsible-heading-toggle ui-btn ui-icon-plus ui-btn-icon-right ui-btn-b">Framing Insp.<span class="ui-collapsible-heading-status"> click to expand contents</span></a></h2><div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+    
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+	<li data-icon="false" class="ui-first-child"><a href="https://form.jotform.com/51320175288958" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Foundation</a></li>
+	<li data-icon="false"><a href="https://form.jotform.com/60314243240945" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Radon Inspection</a></li>
+	<li data-icon="false"><a href="https://form.jotform.com/52536681714964" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Basement Stage 1</a></li>
+	<li data-icon="false"><a href="https://form.jotform.com/60107397944966" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Main Floor</a></li>
+	<li data-icon="false"><a href="https://form.jotform.com/60126530318951" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Second Floor</a></li>
+	<li data-icon="false"><a href="https://form.jotform.com/60176112858961" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Roof</a></li>
+	<li data-icon="false"><a href="https://form.jotform.com/60186503511952" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Garage &amp; Exterior</a></li>
+	<li data-icon="false" class="ui-last-child"><a href="https://form.jotform.com/60177010547954" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">basement Stage 2</a></li>
+	</ul>
+	</div></li>	
+	
+	<li data-role="collapsible" data-inset="true" data-iconpos="right" data-theme="b" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content ui-collapsible-collapsed"><h2 style="margin: 0;" class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a href="#" class="ui-collapsible-heading-toggle ui-btn ui-icon-plus ui-btn-icon-right ui-btn-b">Lot Insp.<span class="ui-collapsible-heading-status"> click to expand contents</span></a></h2><div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+    
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+	<li data-icon="false" class="ui-first-child"><a href="https://form.jotform.com/61855748264972" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Pre-Construction</a></li>
+	<li data-icon="false" class="ui-last-child"><a href="https://form.jotform.com/61857036792970" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Final Lot</a></li>
+	</ul>
+	</div></li>	
+	
+	<li data-role="collapsible" data-inset="true" data-iconpos="right" data-theme="b" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content ui-collapsible-collapsed"><h2 style="margin: 0;" class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a href="#" class="ui-collapsible-heading-toggle ui-btn ui-icon-plus ui-btn-icon-right ui-btn-b">Mechanical Insp.<span class="ui-collapsible-heading-status"> click to expand contents</span></a></h2><div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+    
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+	<li data-icon="false" class="ui-first-child ui-last-child"><a href="#" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Coming Soon</a></li>
+	</ul>
+	</div></li>	
+	
+	<li data-role="collapsible" data-inset="true" data-iconpos="right" data-theme="b" class="ui-collapsible ui-collapsible-inset ui-corner-all ui-collapsible-themed-content ui-collapsible-collapsed"><h2 style="margin: 0;" class="ui-collapsible-heading ui-collapsible-heading-collapsed"><a href="#" class="ui-collapsible-heading-toggle ui-btn ui-icon-plus ui-btn-icon-right ui-btn-b">Finishing Insp.<span class="ui-collapsible-heading-status"> click to expand contents</span></a></h2><div class="ui-collapsible-content ui-body-inherit ui-collapsible-content-collapsed" aria-hidden="true">
+    
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+	<li data-icon="false" class="ui-first-child ui-last-child"><a href="#" data-role="button" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Coming Soon</a></li>
+	</ul>
+	</div></li>	
+	</div></div>  <!-- /data-role="collapsible" Operations -->
+	
+	<br>
+	<li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit">Links</li>
+	<hr>
+	<li data-icon="false"><a href="https://www.hyphensolutions.com/NSBuild/LogIn.asp" data-role="button" target="_blank" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Build Pro</a></li>
+	<li data-icon="false"><a href="http://work.alberta.ca/SearchAARC/38.html" data-role="button" target="_blank" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">OHS Code Online</a></li>
+	<li data-icon="false"><a href="http://vista.calgary.ca/" data-role="button" target="_blank" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Vista Inspections</a></li>
+	<li data-icon="false"><a href="http://www.blocklayer.com/CalculatorDirectory.aspx" data-role="button" target="_blank" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Builder Calculators</a></li>
+	<li data-icon="false" class="ui-last-child"><a href="http://wxug.us/1orj6" data-role="button" target="_blank" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">Weather around Town</a></li>
+
+	<a class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-phone ui-btn-icon-left ui-btn-b" href="#eNumbers" data-transition="pop" data-rel="popup" data-position-to="window" aria-haspopup="true" aria-owns="eNumbers" aria-expanded="false">Emergency Numbers</a>
+
+	<hr>
+
+	 <!-- <a href="javascript:void( window.open('http://form.jotform.ca/form/50643995635264', 'blank','scrollbars=yes,toolbar=no,width=700,height=500'))">Hazard Assessment2</a> -->
+	
+	</ul> <!-- /data-role=list -->
+	</div></div>
+
+	<!-- <script type="text/javascript" src="http://form.jotform.ca/jsform/50643995635264"></script> -->
+	
+	
+
+	  <!-- /data-role="ui-panel-inner" -->
+  </div> <!-- /data-role="panel" id="myPanel -->
+
+<!-- <script type="text/javascript" src="http://form.jotform.ca/jsform/50697426069263"></script> -->
+
+
+
+  <div class="ui-panel-wrapper"><div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+	<a href="#myPanel" data-role="button" data-icon="bullets" data-theme="b" class="ui-link ui-btn-left ui-btn ui-btn-b ui-icon-bullets ui-btn-icon-left ui-shadow ui-corner-all" role="button">Menu</a><h2 class="ui-title" role="heading" aria-level="1">Albi Forms</h2>
+   </div><div data-role="main" class="ui-content">
+  
+<div style="display: none;" id="eNumbers-placeholder"><!-- placeholder for eNumbers --></div><!-- /eNumbers -->
+
+
+	<p style="text-align: center;"><img alt="" src="data:image/jpeg;base64,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Hbq4QzqLNidgTeUzC67gpBOCMjmit09RUuvodd/wSL1vwufg14o0zTrqaHxd/wAJFd6n4o0W4t2tptEupm2iAI3WNViChu5VshT8o5r9tZAP+Cp/7NrY+Yrdgn2G7/E12H7IHwG15/2yPit8ZNQ0W+8KaL4xihsNJ0y+URXlyqCLzLqaIE+XuaLKq3zfOxIHeD/gox8BfF+r/Ef4X/FrwNo8niTV/hnqJlvtHhYLcX9m7IzeVnqw2uMDJPmZAOMHPlfsrW2f4Jmia9p8v0Pb/wBrD/k1n4lf9irqn/pJLWL+wbx+xX8Kv+xW0/8A9EJXA/Gj9oXVP2j/AIK6x4L8C+BPiBF4k8Y2EmlyPrugXOk2eixzqY5ZZ55lVG2IzELEXLEADrXvHwn+H9v8J/hb4b8L2shltfDel22mRORgyLDEsYY+525/GtY6zuuxk9I2Z8j/AAp/5TlfE3/sS7f/ANA0+vtS6/49pP8AdP8AKvi/4daLrmk/8FevHHje48L+LIfCGteHY9JtNVbRLr7PLcIlmCP9XkLmJxuIC/L15FfYninWE0Dw7eXkkd1MtvEzeXbW8lxK57BUjBZjnsBSo7P1Y6m69EfHf/BC7/k1XxP/ANjhef8Aoi2r7QktY5Z45GjjaSHOxyoLJng4PbNfAv8AwTD8e+Iv2Sfgjr/h3xp8Lvirb315r02qQNZeGprmOSOSKJQPl5DAxng8cjnrj7c+E/i3UPHnw903WtU0m60G71JGuP7PukMdxaRs7GNJVP3ZBHs3Ds2RSw79xIdaL5mz5K+LH/KdD4Y/9iLN/LU6+00s4UvJLhYY1uJUWN5Qo3uqliqk9SAWYgdtx9TXxf8AFjRdek/4K/eCfHEPhbxZceENB8NyaNfarDot1LbxTst8QAVjJZczRjcoK89a+00fzEVhnDDIyMH8qdHeXqKp09BaKKK2MgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP//Z" style="height: 176px; width: 320px;"></p>    <p align="center">Click <b>MENU</b> button from top left to find forms</p>
+	<p align="center">Remember to return to this page press the browser back button </p>
+	<p align="center">Currently this is just a beta of our electronic form submission system. </p>
+	<p style="text-align: center;"><strong><u>PLEASE BE ADVISED</u></strong></p>
+	<p style="text-align: center;"><strong>Should there be a problem with the electronic version of the Safety Documents, </strong></p>
+	<p style="text-align: center;"><strong>Please Contact </strong></p>
+	<p style="text-align: center;"><strong>Safety Officer:&nbsp; Paul De Rosa </strong></p>
+	<p style="text-align: center;"><a href="tel:4032035305" class="ui-link"><strong>Direct line (403) 203-5305</strong></a></p>
+	<p style="text-align: center;"><a href="tel:4033127424" class="ui-link"><strong>Cell (403) 312-7424</strong></a></p>
+	<p style="text-align: center;"><a href="mailto:safety@albihomes.com" class="ui-link"><strong>E-mail (safety@albihomes.com)</strong></a></p>
+	<p style="text-align: center;"><a class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-phone ui-btn-icon-left ui-btn-b" href="#eNumbers" data-transition="pop" data-rel="popup" data-position-to="window" aria-haspopup="true" aria-owns="eNumbers" aria-expanded="false">Emergency Numbers</a></p>
+	<p style="text-align: center;">&nbsp;</p>
+	<p style="text-align: center;"><strong>If you are not able to attain 
+the electronic version of the Safety documents, it is your 
+responsibility to fill out a hard copy of the required document to the 
+Safety Officer.</strong></p>
+	<!-- <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Panel</a> -->
+	<!-- <script type="text/javascript" src="http://form.jotform.ca/jsform/50643995635264"></script> -->
+	
+  </div></div>
+
+   <!-- /date-role=main -->
+
+	<div data-role="footer" data-position="fixed" role="contentinfo" class="ui-footer ui-bar-inherit ui-footer-fixed slideup ui-fixed-hidden">
+    <p style="font-size:10px" align="center">Copyright © 2016 ALBI Homes, a Division of Brookfield Residential (Alberta) LP. All Rights Reserved v1.1</p>
+
+		</div>
+<div class="ui-screen-hidden ui-popup-screen ui-overlay-b" id="eNumbers-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="eNumbers-popup"><div id="eNumbers" style="min-width:285px;" class="ui-content ui-popup ui-body-b ui-overlay-shadow ui-corner-all" data-role="popup" data-theme="b" data-overlay-theme="b" data-dismissible="false">
+    <div data-role="header" data-theme="a" role="banner" class="ui-header ui-bar-a">
+    <h1 class="ui-title" role="heading" aria-level="1">Emergency Numbers</h1>
+	    </div>
+    <div class="ui-content" role="main">
+	<hr>
+	<h3 class="ui-title">Emergency Response</h3>
+		<li>Amb./Fire/Police/Poison	911</li>
+	    <li>Hazardous Spills	911</li>
+		<li>Poison Control <a href="tel:4039441414" class="ui-link">(403)944-1414</a></li>
+
+	<h3 class="ui-title">Gas/Power</h3>
+		<li>ATCO Gas 24HR.<a href="tel:4032457222" class="ui-link">(403)245-7222</a></li>
+		<li>ENMAX 24HR. <a href="tel:4035146100" class="ui-link">(403)514-6100</a></li>	
+
+	<h3 class="ui-title">Non Emergency</h3>
+	    <li>Police <a href="tel:4032661234" class="ui-link">(403)266-1234</a></li>	
+		<li>OHS Reporting <a href="tel:1-8664158690" class="ui-link">1-866-415-8690</a></li>	
+		<li>WCB Report <a href="tel:18669229221" class="ui-link">1-866-922-9221</a></li>
+        <li>City Wide Towing <a href="tel:4032870026" class="ui-link">(403)287-0026</a></li>		
+	<h3 class="ui-title">Hospitals</h3>
+		<li>Alberta Children's <a href="tel:4039557070" class="ui-link">(403)955-7070</a></li>
+		<li>Foothills <a href="tel:4039441315" class="ui-link">(403)944-1315</a></li>
+		<li>Peter Lougheed <a href="tel:4039434999" class="ui-link">(403)943-4999</a></li>
+		<li>Rockyview <a href="tel:4039433449" class="ui-link">(403)943-3449</a></li>
+		<li>South Campus <a href="tel:4039561111" class="ui-link">(403)956-1111</a></li>
+	<hr>
+	<h3 class="ui-title">Contact Your Supervisor</h3>
+    <p>Click Close To Return</p>
+    <a class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" href="#" data-rel="back">Close</a>
+    </div><!-- /ui-content role=main -->
+</div></div></div> <!-- /page1 -->
+  
+  <div data-role="page" id="thankYou" data-url="thankYou">
+  <div data-role="content">
+  <p>Thank you for your submision</p>
+  </div>
+  </div>
+  
+
+<!--
+<script>
+ $(":mobile-pagecontainer").on("pagecontainerbeforetransition", function (event, ui) {
+            $("#header").prependTo(ui.toPage);
+            $("#control-panel").appendTo(ui.toPage);
+        });
+//Adding the changeHash: false to avoid an issue with the iframe
+// $.mobile.changePage( "http://form.jotform.ca/form/50697426069263", { transition: "slideup", changeHash: false });
+</script>
+
+<script>
+  $(document).ready(function(){
+    $('#MyButton').click(function(){
+       CapacityChart();
+    });
+  });
+</script>
+-->
+
+
+
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span><h1>loading</h1></div><div class="ui-panel-dismiss"></div></body></html>
